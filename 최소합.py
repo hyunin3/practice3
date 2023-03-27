@@ -1,4 +1,3 @@
-dij = [(0,1), (1,0)]
 def dfs(i, j, sm):
     global ans
 
@@ -10,7 +9,7 @@ def dfs(i, j, sm):
             ans = sm
         return
 
-    for di, dj in dij:
+    for di, dj in ((0,1), (1,0)):
         ni, nj = i + di, j + dj
 
         if ni > -1 and ni < N and nj > -1 and nj < N:
