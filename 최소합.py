@@ -12,7 +12,7 @@ def dfs(i, j, sm):
     for di, dj in ((0,1), (1,0)):
         ni, nj = i + di, j + dj
 
-        if ni > -1 and ni < N and nj > -1 and nj < N:
+        if 0<= ni < N and 0 <= nj < N:
             dfs(ni, nj, sm + arr[ni][nj])
 
 T = int(input())
