@@ -9,4 +9,4 @@ for tc in range(1, T + 1):
             n = ord(ch) - ord('A') + 10
         for pos in (3,2,1,0):
             lst.append((n>>pos) & 1)
-    print(f'#{tc} {"".join(map(str, lst))}')                
+    print(f'#{tc} {"".join(map(str, lst))}')                     
